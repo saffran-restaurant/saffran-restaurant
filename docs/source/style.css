@@ -1,0 +1,219 @@
+/* Base Styles */
+:root {
+    --text-color: #000000;
+    font-size: 18px; /* Set the base font size */
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(63, 80, 65);
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 1500px;
+}
+
+/* NAVIGATION STYLES */
+/* ################################ */
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    font-size: 50px;
+    gap: 1px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ec9a1f;
+    padding: 1rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 1rem 1rem 0;
+    border: 2px solid #ff9900;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Or whatever maximum size you want */
+    min-width: 300px;
+  }
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
+
+nav a:hover{
+    background-color: #ffba53;
+}
+
+/* ################################ */
+
+
+/* SECTION STYLES */
+/* ################################ */
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header header"
+        "text logo"
+        "text logo"
+        "footer footer";
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    column-gap: 100px; 
+}
+
+.header_of_section {
+    grid-area: header;
+}
+
+.header_of_section h2{
+    text-decoration-line: underline; 
+}
+
+.image_of_section {
+    grid-area: logo;
+    align-self: center;  
+    justify-self: center;
+}
+
+.image_of_section img {
+    width: 250px;
+}
+
+.footer_of_section {
+    grid-area: footer;
+}
+
+
+section div{
+    font-size: 25px;
+    grid-area: text;
+    align-self: start;
+    justify-self: start;
+    padding: 1rem 0rem;
+}
+
+.section_welcome{
+    align-items: center;
+}
+
+.small_headlines{
+    padding: 0 0 10px;
+}
+
+.section_menu{
+    grid-area: menu;
+    align-items: center;
+}
+
+.section_catering{
+    grid-area: catering;
+    align-items: center;
+}
+
+/*First section box*/
+
+#opening_hours li{
+    display: grid;
+    padding: 0.2em 0em;
+    grid-template-columns: 200px auto;
+}
+
+#happy_hour li{
+    display: grid;
+    padding: 0.2em 0em;
+    grid-template-columns: auto auto;
+}
+
+#kontakt-box{
+    width: 500px;
+    font-size: 30px;
+    align-self: center;  
+    justify-self: center;
+    display: flex;
+    flex-direction: column;    
+    background-color: #f0f0f0;
+    padding: 1em 1em;
+    border-radius: 1em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+#phone-number{
+    margin: 0em 0em;
+    font-size: 40px;
+}
+
+/* Links */
+.legal-content a {
+    color: #ec9a1f;
+    text-decoration: none;
+}
+
+.legal-content a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #3f5041;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #ec9a1f;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    color: #ffba53;
+    text-decoration: underline;
+}
