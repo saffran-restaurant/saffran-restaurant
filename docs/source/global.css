@@ -1,0 +1,24 @@
+/* Base Styles */
+:root {
+    --nav-color: #ec9a1f;
+}
+
+html {
+    /* Sets 1rem = 10px (default 16px * 0.625) */
+    font-size: 62.5%;
+    /* Scroll to links within page instead of jumping*/
+    scroll-behavior: smooth; 
+    /* scroll-padding-top: 100px; */
+
+}
+
+body{
+    background-color: rgb(63, 80, 65);
+}
+
+
+/*
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+*/
