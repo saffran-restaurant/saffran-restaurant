@@ -2,10 +2,12 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1500">
     <meta name="HandheldFriendly" content="True">
     <title>Safran - Indisches Restaurant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global-style.css">
+    <link rel="stylesheet" href="navbar-style.css">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="foot-style.css">
     <meta name="author" content="Simon H. Hille">
     <script type="application/ld+json">
     {
@@ -25,118 +27,127 @@
         "acceptsReservations": true
     }
     </script>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="page-wrapper">
-        <nav>
-            <img id="logo" src="./figs/logo_saff.png" alt="logo">
-            <ul>
-                <li>
-                    <a class="no-url-change" data-target="Öffnungszeiten">Öffnungszeiten</a>
-                </li>
-                <li>
-                    <a class="no-url-change" data-target="Speisen">Speisen</a>
-                </li>
-                <li>
-                    <a class="no-url-change" data-target="Catering">Catering</a>
-                </li>
-            </ul>
-        </nav>
-        <section id="Öffnungszeiten">
+<div class="page-wrapper">
+<!-- Navbar -->
+<nav>
+<div id="nav_items">
+    <a href="index.html">
+        <img src="./figs/logo_saff.png" alt="logo">
+    </a>
+    <ul id="nav_items_list">
+        <a href="speisen.html">
+            <li>
+                Menü
+            </li>
+        </a>
+    </ul>
+</div>
+</nav>
 
-            <div class="header_of_section">
-                <h2> Saffran - Indisches Resturant in Köln-Dellbrück: </h2>
-                Hatzfeld Straße 11, 51069 Dellbrück, Köln
-            </div>
+<!-- Willkommen -->
+<section id="welcome_section">
 
-            <div class="image_of_section">
-                <div id="kontakt-box">
-                    <p>Bestellen Sie jetzt oder reservieren Sie einen Tisch:</p>
-                    <div class="phone-number"><strong>0221 - 2412312241</strong></div>
-                    <div class="phone-number"><strong>0152 - 18909825</strong></div>
-                </div>
-            </div>
+<div class="header_of_section">
+    <h1> Saffran - Indisches Resturant </h1>
+    Hatzfeld Straße 11, 51069 Dellbrück, Köln
+</div>
 
-            <div class="text_of_section">
-                <div id="opening_hours"> 
-                    <div class = "small_headlines"><u> 🕑 Öffnungszeiten </u></div>
-                    <ul>
-                        <li><span class="tag">• Mo – Fr:</span><span class="zeit">11:00 – 22:00</span></li>
-                        <li><span class="tag">• Sa:</span><span class="zeit">11:00 – 22:00</span></li>
-                        <li><span class="tag">• So:</span><span class="zeit">11:00 – 22:00</span></li>
-                    </ul>
-                </div>
-                <div id="happy_hour">  
-                    <div class = "small_headlines"><u> 🎉 Happy Hour / Mittagstisch von 12:00 bis 15:00 Uhr </u></div>
-                    <ul>
-                        <li>Vegetarische Gerichte: 8,90 €</li>
-                        <li>Huhn + Kartoffeln in Currysauce: 10,90 €</li>
-                        <li>Lamm + Kartoffeln in Currysauce: 11,90 €</li>
-                    </ul>
-                </div>
-                <div class = "small_headlines"><u> 🚗 Lieferung in der Nähe von Köln-Dellbrück </u></div>
-                Wir liefern in Köln-Dellbrück und der näheren Umgebung.
-                <div id="delivery_hours"> 
-                    <div class = "small_headlines"><u> Lieferzeiten </u></div>
-                    <ul>
-                        <li><span class="tag">• Mo – Fr:</span><span class="zeit">13:00 – 22:00</span></li>
-                        <li><span class="tag">• Sa:</span><span class="zeit">13:00 – 22:00</span></li>
-                        <li><span class="tag">• So:</span><span class="zeit">13:00 – 22:00</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer_of_section">
-                <h4>📞 Bitte telefonisch bestellen </h4>
-                Bestellungen per Telefon helfen uns sehr, da bei Online-Plattformen bis zu 30 % 
-                des Umsatzes als Gebühr verloren gehen. Vielen Dank für Ihre Unterstützung!
-            </div>
-        </section>
+<div class="content_of_section" id="welcome_content">
 
-        <section id="Speisen">
-            <div class="text_of_section">
-                <h2> 
-                    Speisen: 
-                </h2>
-                <div> 
-                    Hier finden Sie unsere Speisekarte: 
-                </div>
-                <div> 
-                    Entdecken Sie die Vielfalt und Lebendigkeit der indischen Küche.
-                    Unsere Spezialitäten sind Gerichte aus dem Tandoori Ofen und Fisch.
-                    Seit neuestem bieten wir auch Naan Pizzen an!
-                </div>
-            </div>
-            <div class="image_of_section">
-                <img src="./figs/food.png" alt="logo">
-            </div>
-        </section>
-
-        <section id="Catering">
-            <div class="text_of_section">
-                <h2> Catering: </h2>
-                <div> Kontaktieren Sie uns gerne per Mail: info@saffran-restaurant.com </div>
-                <div> Ob Hochzeit, Geburtstagsfeier oder Betriebsfest – mit unserem Catering bringen wir 
-                    echte indische Küche direkt zu dir!
-                </div>
-            </div>
-            <div class="image_of_section">
-                <img src="./figs/catering.png" alt="logo">
-            </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Saffran Indisches Restaurant - Alle Rechte vorbehalten</p>
-                <div class="footer-links">
-                    <a href="impressum.html">Impressum</a> | 
-                    <a href="datenschutz.html">Datenschutz</a> | 
-                    <a href="mailto:info@saffran-restaurant.com">Kontakt</a>
-                </div>
-            </div>
-        </footer>
+<div id="welcome_content_tiles">
+    <div id="opening">
+        <h2> 🕑 Öffnungszeiten </h2>
+        <ul id="opening_hours">
+            <li><span class="tag">• Mo – Fr:</span><span class="zeit">12:00 – 22:00</span></li>
+            <li><span class="tag">• Sa:</span><span class="zeit">12:00 – 22:00</span></li>
+            <li><span class="tag">• So:</span><span class="zeit">12:00 – 22:00</span></li>
+        </ul>
+        Wir haben das ganze Jahr über geöffnet, auch an Feiertagen!
     </div>
-    <script src="scripts/jump_to.js"></script>
+
+    <div id="menu">
+        <h2> 📜 Speisekarte </h2>
+        Unsere Speisekarte: <a id="menu_link" href="speisen.html">🗎</a>
+        <br><br>
+        Unsere Spezialitäten sind vegetarische Gerichte und indische Pizzen (Naan Pizzen).
+    </div>
+
+    <div id="contact_info">
+        <h2> 📞 Kontakt </h2>
+        <h3>Bestellung und Reservierung:</h3>
+        <ul id="phone_numbers">
+            <li>Telefon: <strong>0221 - 2412312241</strong></li>
+            <li>Mobil: <strong>0152 - 18909825</strong></li>
+            <li>Email: <strong>atmmanirhossain@gmail.com</strong></li>
+        </ul>
+    </div>
+
+    <div id="delivery">
+        <h2> 🚗 Lieferung </h2>
+        Wir liefern (ab 20€ Bestellwert) kostenlos in Köln-Dellbrück und der näheren Umgebung.
+        <h3> Lieferzeiten </h3>
+        <ul id="delivery_hours">
+            <li><span class="tag">• Mo – Fr:</span><span class="zeit">13:00 – 22:00</span></li>
+            <li><span class="tag">• Sa:</span><span class="zeit">13:00 – 22:00</span></li>
+            <li><span class="tag">• So:</span><span class="zeit">13:00 – 22:00</span></li>
+        </ul>
+    </div>
+
+    <div id="lunch_deals">
+        <h2> 🍽️ Mittagsangebot </h2>
+        <ul id="lunch_deals_details">
+            <li>Vegetarische Gerichte: 8,90 €</li>
+            <li>Huhn + Kartoffeln in Currysauce: 10,90 €</li>
+            <li>Lamm + Kartoffeln in Currysauce: 11,90 €</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="footer_of_section">
+    <h1>💸 Bitte bestellen Sie telefonisch! </h1>
+    Bestellungen per Telefon helfen uns sehr, da bei Online-Plattformen bis zu 30% 
+    des Umsatzes als Gebühr verloren gehen. Vielen Dank für Ihre Unterstützung!
+</div>
+</section>
+
+<section id="about_us">
+
+<div class="header_of_section">
+    <h1> Willkommen im Restaurant Saffran </h1>
+</div>
+<div class="content_of_section">
+    <div>
+        Im Namen unserer Familie heißen wir Sie herzlich bei uns willkommen!
+        <br><br>
+        Wir führen unser Restaurant als Familienbetrieb und möchten, dass Sie sich bei uns wie zu Hause fühlen.
+        Unser Angebot umfasst eine große Auswahl an verschiedenen Currys, indischen Pizzen und vegetarischen Gerichten.
+
+        Falls Sie Fragen haben, zögern Sie nicht, uns zu kontaktieren.
+        <br><br>
+        Wir freuen uns auf Ihren Besuch oder ihre Bestellung.
+        <br><br>
+        Ihre Familie Hossain
+    </div>
+    <div class="image-container">
+        <img src="./figs/us.jpeg" alt="picture of us" id="img_us">
+    </div>
+</div>
+
+<div class="footer_of_section"></div>
+</section>
+    
+    
+<!-- Footer -->
+<footer id="site-footer">
+    <p>&copy; 2025 Saffran Indisches Restaurant - Alle Rechte vorbehalten</p>
+    <div>
+        <a href="impressum.html">Impressum</a> | 
+        <a href="datenschutz.html">Datenschutz</a>
+    </div>
+</footer>
 </body>
+</div>
 </html>

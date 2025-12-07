@@ -11,7 +11,7 @@ welcome).
 
 # Lizenz
 
-Dieses Projekt ist unter der **Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0)** lizenziert.
+Code, Struktur & Inhalte (ohne Bilder) ist unter der **Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0)** lizenziert.
 
 **Kurz gesagt:**
 * **Nicht-kommerzielle** Nutzung (z.B. private Projekte, Forschung, Lehre) ist erlaubt, solange der Urheber genannt wird.
@@ -21,3 +21,5 @@ Dieses Projekt ist unter der **Creative Commons Attribution-NonCommercial 4.0 In
 * **Für jede kommerzielle Verwendung** (generiert Umsatz oder dient einem geschäftlichen Vorteil) ist eine **vorherige, schriftliche Genehmigung** und eine separate Lizenzvereinbarung mit dem Urheber erforderlich.
 * Lizenzanfragen sind zu richten an **Simon H. Hille**.
 
+Alle bilder außer food.png und logo_saff.png sind © 2025 Atm Manir Hossain — All Rights Reserved.
+Wiederverwendung ist **verboten** ohne Genehmigung.
