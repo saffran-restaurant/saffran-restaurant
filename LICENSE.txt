@@ -1,3 +1,6 @@
+1. Code, Struktur & Inhalte (ohne Bilder)
+Dieses Projekt – alle Dateien außer Bildern – steht unter der
+
 Creative Commons Attribution-NonCommercial 4.0 International Public License
 
 BY-NC 4.0
@@ -19,6 +22,9 @@ Keine weiteren Einschränkungen — Sie dürfen keine zusätzlichen Klauseln ode
 WICHTIGER HINWEIS ZUR KOMMERZIELLEN NUTZUNG:
 Die kommerzielle Nutzung dieses Codes ist durch die CC BY-NC 4.0 untersagt.
 Jede Verwendung, die einen Umsatz generiert (kommerziell), erfordert eine separate, schriftliche und bezahlte Lizenzvereinbarung mit dem Urheber.
-Für Lizenzanfragen kontaktieren Sie bitte: [IHRE E-MAIL-ADRESSE].
 
-[Hier folgt der vollständige Lizenztext der CC BY-NC 4.0. Sie finden ihn online und sollten ihn vollständig in die Datei einfügen, um rechtliche Klarheit zu gewährleisten.]
+
+2. Bilder / Images – Alle Rechte vorbehalten
+
+Alle bilder außer food.png und logo_saff.png sind © 2025 Atm Manir Hossain — All Rights Reserved.
+Wiederverwendung ist verboten ohne Genehmigung.

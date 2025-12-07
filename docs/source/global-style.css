@@ -1,6 +1,7 @@
 /* Base Styles */
 :root {
     --nav-color: #ec9a1f;
+    --bg-color: rgb(63, 80, 65);
 }
 
 html {
@@ -12,8 +13,16 @@ html {
 
 }
 
+@media ((min-width: 750px) and (max-width: 1500px)) {
+    html{font-size: 50%;}
+}
+
+@media (max-width: 749px) {
+    html{font-size: 37.5%;}
+}
+
 body{
-    background-color: rgb(63, 80, 65);
+    background-color: var(--bg-color);
 }
 
 
