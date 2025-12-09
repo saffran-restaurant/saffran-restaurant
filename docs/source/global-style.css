@@ -13,10 +13,11 @@
 
 html {
     font-family: "Open Sans", sans-serif;
-    font-size: clamp(6px, calc(0.682vw + 3.318px), 12px);
+    font-size: clamp(6px, calc(0.682vw + 3.318px), 12px); /* 0.75rem */
     /* Scroll to links within page instead of jumping*/
     scroll-behavior: smooth; 
     /* scroll-padding-top: 100px; */
+    min-width: 320px;
 }
 
 body{
