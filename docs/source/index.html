@@ -21,7 +21,7 @@
             "postalCode": "51069",
             "addressCountry": "DE"
         },
-        "telephone": "0221-2412312241",
+        "telephone": "0221 - 80037770",
         "servesCuisine": "Indian",
         "hasMenu": true,
         "acceptsReservations": true
@@ -34,16 +34,31 @@
 <!-- Navbar -->
 <nav>
 <div id="nav_items">
-    <a href="index.html">
+    <a href="index.html" id="link_logo">
         <img src="./figs/logo_saff.png" alt="logo">
     </a>
-    <ul id="nav_items_list">
-        <a href="speisen.html">
+    <div id="nav_items_list">
+    <ul>
+        <a href="#welcome_section" class="smooth_scroll">
             <li>
-                Menü
+                Willkommen
+            </li>
+        </a>
+        <a href="#impressions" class="smooth_scroll">
+            <li>
+                Impressionen
+            </li>
+        </a>
+        <a href="#about_us" class="smooth_scroll">
+            <li>
+                Über uns
             </li>
         </a>
     </ul>
+    </div>
+    <a role="button" id="mobile_menu_icon" onclick="to_responsive_nav()">
+        ☰
+    </a>
 </div>
 </nav>
 
@@ -70,7 +85,7 @@
 
     <div id="menu">
         <h2> 📜 Speisekarte </h2>
-        Unsere Speisekarte: <a id="menu_link" href="speisen.html">📄</a>
+        Unsere Speisekarte: <a id="menu_link" href="./files/test.pdf" target="_blank">Speisekarte</a>
         <br><br>
         Unsere Spezialitäten sind vegetarische Gerichte und indische Pizzen (Naan Pizzen).
     </div>
@@ -79,7 +94,7 @@
         <h2> 📞 Kontakt </h2>
         <h3>Bestellung und Reservierung:</h3>
         <ul id="phone_numbers">
-            <li>Telefon: <strong>0221 - 2412312241</strong></li>
+            <li>Telefon: <strong>0221 - 80037770</strong></li>
             <li>Mobil: <strong>0152 - 18909825</strong></li>
             <li>Email: <strong>atmmanirhossain@gmail.com</strong></li>
         </ul>
@@ -113,6 +128,78 @@
 </div>
 </section>
 
+<section id="impressions">
+    <div class="header_of_section">
+        <h1> Impressionen </h1>
+    </div>
+    <div id="impressions_speisen">
+    <h2> 🍽️ Speisen </h2>
+    <ul>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/saffran_teller.jpeg" alt="saffran_teller">
+                <div class="polaroid_caption">Saffran Teller</div>
+            </div>
+        </li>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/mixed_veg_curry.jpeg" alt="mixed_vegetable_curry">
+                <div class="polaroid_caption">Mixed Vegetable Curry</div>
+            </div>
+        </li>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/chicken_biryani.jpeg" alt="chicken_biryani">
+                <div class="polaroid_caption">Chicken Biryani</div>
+            </div>
+        </li>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/chicken_sizzler.jpeg" alt="chicken_sizzler">
+                <div class="polaroid_caption">Chicken Sizzler</div>
+            </div>
+        </li>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/garlic_naan.jpeg" alt="garlic_naan">
+                <div class="polaroid_caption">Garlic Naan</div>
+            </div>
+        </li>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/mango_kulfi.jpeg" alt="mango_kulfi">
+                <div class="polaroid_caption">Mango Kulfi</div>
+            </div>
+        </li>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/joghurt_lassi.jpeg" alt="joghurt_lassi">
+                <div class="polaroid_caption">Joghurt Lassi</div>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <div id="impressions_restaurant">
+    <h1> 🍽️ Restaurant </h1>
+    <ul>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/inside.jpeg" alt="inside">
+                <div class="polaroid_caption">Inside</div>
+            </div>
+        </li>
+        <li> 
+            <div class="polaroid_container">
+                <img src="./figs/outside.jpeg" alt="outside">
+                <div class="polaroid_caption">Outside</div>
+            </div>
+        </li>
+    </ul>
+    </div>
+<div class="footer_of_section"></div>
+</section>
+    
+
 <section id="about_us">
 
 <div class="header_of_section">
@@ -138,8 +225,8 @@
 
 <div class="footer_of_section"></div>
 </section>
-    
-    
+
+
 <!-- Footer -->
 <footer id="site-footer">
     <p>&copy; 2025 Saffran Indisches Restaurant - Alle Rechte vorbehalten</p>
@@ -148,6 +235,11 @@
         <a href="datenschutz.html">Datenschutz</a>
     </div>
 </footer>
+<script src="./scripts/utils.js"></script>
+<script src="./scripts/size_navbar.js"></script>
+<script src="./scripts/mobile_navbar.js"></script>
+<script src="./scripts/smooth_scroll.js"></script>
+
 </body>
 </div>
 </html>

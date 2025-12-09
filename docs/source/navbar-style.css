@@ -6,23 +6,19 @@ nav{
     top: 0;
     background-color: #ec9a1f;
     padding: 2rem 2rem;
-    font-size: 4rem;
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+    font-size: 3rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
-@media (max-width: 799px) {
-    #nav_items { --logo_width: 150px; }
+nav.menu-open {
+    border-bottom-right-radius: 0;
 }
-@media (min-width: 800px) and (max-width: 1499px) {
-    #nav_items { --logo_width: 240px; }
-}
-@media (min-width: 1500px) {
-    #nav_items { --logo_width: 300px; }
-}
+
 
 #nav_items {
     display: grid;
+    --logo_width: clamp(150px, 20.455vw + 54.546px, 300px);
     grid-template-columns: var(--logo_width) auto;
     align-items: center;
     justify-items: end;
@@ -30,18 +26,12 @@ nav{
 
 nav a {
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     color: black;
     text-decoration: none;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    nav a:hover {
-        transform: translateY(-2px);
-    }
-}
-
-nav img {
+#link_logo > img {
     display: block;
     width: var(--logo_width);
     border-radius: 6px;
@@ -57,14 +47,72 @@ nav ul{
 }
 
 @media (hover: hover) and (pointer: fine) {
-    #nav_items_list > a:hover {
+    #link_logo:hover,
+    #mobile_menu_icon:hover,
+    #nav_items_list > ul > a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 6px rgba(0,0,0,0.2);
+        border-radius: 6px;
+    }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    #nav_items_list > ul > a:hover {
         background-color: #ffba53;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        border-radius: 1rem;
     }
 }
 
 nav li{
     margin: 0rem 2rem;
     padding: 2rem 2rem;
+}
+
+
+#mobile_menu_icon {
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+  #nav_items_list {display: none;}
+  .icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+    #mobile_menu_icon {
+        display: block;
+        color: black;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        background-color: white;
+        transition: all 0.2s ease;
+    }
+    @media (hover: hover) and (pointer: fine) {
+        #nav_items_list a:hover {
+            transform: translateY(0px) !important;
+        }
+    }
+}
+
+#nav_items_list.responsive {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--nav-color);
+        border-radius: 0 0 6px 6px;
+        z-index: 2;
+    }
+
+#nav_items_list.responsive > ul {
+    flex-direction: column;
+    padding: 0;
+}
+
+#nav_items_list.responsive a {
+    transition: all 0.0s ease;
 }
