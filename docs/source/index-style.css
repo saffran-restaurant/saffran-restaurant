@@ -122,16 +122,20 @@ section {
     --img-size: clamp(100px, 22.727vw + 27.272px, 300px);
     --pola-size: calc(var(--img-size) + 2rem);
     display: grid;
+    height: auto;
     grid-template-columns: repeat(var(--grid-columns), var(--pola-size));
+    grid-auto-rows: 1fr;
     justify-self: center;
     gap: 1rem;
     list-style: none;
     padding-left: 0;
 }
 
-div.polaroid_container {
+.polaroid_container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    height: calc(100% - 2rem);
     align-items: center;
     gap: 1rem;
     padding: 1rem;
@@ -140,14 +144,17 @@ div.polaroid_container {
     box-shadow: 0 4px 8px #0003, 0 6px 20px #0003;
 }
 
-div.polaroid_container > img{
+.polaroid_container > img{
     display: block;
     width: var(--img-size);
     height: auto;
 }
 
-div.polaroid_container.caption {
-  text-align: center;
+.polaroid_caption {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
 }
 
 
