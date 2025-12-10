@@ -10,13 +10,13 @@ section {
     gap: 3rem;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 999px) {
     #welcome_content_tiles { grid-template-columns: 1fr; }
 }
-@media (min-width: 800px) and (max-width: 1499px) {
+@media (min-width: 1000px) and (max-width: 1649px) {
     #welcome_content_tiles { grid-template-columns: 1fr 1fr; }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1650px) {
     #welcome_content_tiles { grid-template-columns: 1fr 1fr 1fr; }
 }
 
@@ -45,22 +45,10 @@ section {
     padding-left: 0;
 }
 
-#opening_hours li,
-#delivery_hours li {
-    display: grid;
-    padding: 0.2rem 0em;
-    grid-template-columns: calc(1.5rem*8) auto;
-}
-
-#lunch_deals_details li{
-    display: grid;
-    padding: 0.2rem 0em;
-    grid-template-columns: auto auto;
-}
-
 #menu_link {
-    padding: 1rem 3rem;
-    margin: 1rem 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0rem 0 1rem 1rem;
     border: 2px solid var(--nav-color);
     border-radius: 6px;
     
@@ -68,6 +56,8 @@ section {
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -84,30 +74,39 @@ section {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* ABOUT US SECTION STYLES */
+.vertical_centered_items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.vertical_centered_items > div{
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 400px) {
+    .vertical_centered_items > div{
+    flex-direction: column;
+  }
+}
+
+#opening_hours li,
+#delivery_hours li {
+    display: grid;
+    padding: 0.2rem 0em;
+    grid-template-columns: calc(1.5rem*8) auto;
+}
+
+#lunch_deals_details li{
+    display: grid;
+    padding: 0.2rem 0em;
+    grid-template-columns: auto auto;
+}
+
+
+/* IMPRESSIONS SECTION STYLES */
 /* ################################ */
-
-#about_us .content_of_section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 7rem;
-}
-
-@media (max-width: 800px) {
-    #about_us .content_of_section { 
-        flex-direction: column; 
-        align-items: flex-start;
-        gap: 5rem;
-    }
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 @media (max-width: 749px) {
     #impressions > div > ul { --grid-columns: 2; }
@@ -115,13 +114,9 @@ section {
 @media (min-width: 750px) and (max-width: 1499px) {
     #impressions > div > ul { --grid-columns: 3; }
 }
-@media (min-width: 1500px) and (max-width: 1799px) {
+@media (min-width: 1500px) {
     #impressions > div > ul { --grid-columns: 4; }
 }
-@media (min-width: 1800px) {
-    #impressions > div > ul { --grid-columns: 5; }
-}
-
 
 #impressions > div > ul{
     --img-size: clamp(100px, 22.727vw + 27.272px, 300px);
@@ -156,6 +151,30 @@ div.polaroid_container.caption {
 }
 
 
+/* ABOUT US SECTION STYLES */
+/* ################################ */
+
+
+#about_us .content_of_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7rem;
+}
+
+@media (max-width: 800px) {
+    #about_us .content_of_section { 
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 5rem;
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #img_us {
     --img_width: clamp(150px, 20.455vw + 54.546px, 300px);

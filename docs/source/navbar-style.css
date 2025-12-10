@@ -73,7 +73,7 @@ nav li{
     display: none;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
   #nav_items_list {display: none;}
   .icon {
     float: right;
@@ -81,7 +81,7 @@ nav li{
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
     #mobile_menu_icon {
         display: block;
         color: black;

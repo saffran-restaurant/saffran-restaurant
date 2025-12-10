@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="HandheldFriendly" content="True">
     <title>Safran - Indisches Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="./figs/favicon.ico">
     <link rel="stylesheet" href="global-style.css">
     <link rel="stylesheet" href="navbar-style.css">
     <link rel="stylesheet" href="index-style.css">
@@ -23,6 +24,7 @@
             "addressCountry": "DE"
         },
         "telephone": "0221 - 80037770",
+        "email": "atmmanirhossain@gmail.com",
         "servesCuisine": "Indian",
         "hasMenu": true,
         "acceptsReservations": true
@@ -85,26 +87,35 @@
     </div>
 
     <div id="menu">
-        <h2> 📜 Speisekarte </h2>
-        Unsere Speisekarte: <a id="menu_link" href="./files/test.pdf" target="_blank">Speisekarte</a>
-        <br><br>
+        <h2> 📋 Speisekarte </h2>
+        Unsere Speisekarte: <a id="menu_link" href="./files/test.jpg" target="_blank">Menü</a>
+        <br>
         Unsere Spezialitäten sind vegetarische Gerichte und indische Pizzen (Naan Pizzen).
     </div>
 
     <div id="contact_info">
         <h2> 📞 Kontakt </h2>
         <h3>Bestellung und Reservierung:</h3>
-        <ul id="phone_numbers">
-            <li>Telefon: <strong>0221 - 80037770</strong></li>
-            <li>Mobil: <strong>0152 - 18909825</strong></li>
-            <li>Email: <strong>atmmanirhossain@gmail.com</strong></li>
+        <div class="vertical_centered_items">
+            <div>
+                <div> Telefon: </div> 
+                <div> <strong>0221 - 80037770</strong></li> </div>
+            </div>
+            <div>
+                <div> Mobil: </div>
+                <div> <strong>0152 - 18909825</strong></div>
+            </div>
+            <div>
+                <div>Email:</div>
+                <div itemprop="email"><strong>atmmanirhossain@gmail.com</strong></div>
+            </div>
+        </div>
         </ul>
     </div>
 
     <div id="delivery">
         <h2> 🚗 Lieferung </h2>
         Wir liefern (ab 20€ Bestellwert) kostenlos in Köln-Dellbrück und der näheren Umgebung.
-        <h3> Lieferzeiten </h3>
         <ul id="delivery_hours">
             <li><span class="tag">• Mo – Fr:</span><span class="zeit">13:00 – 22:00</span></li>
             <li><span class="tag">• Sa:</span><span class="zeit">13:00 – 22:00</span></li>
@@ -113,12 +124,21 @@
     </div>
 
     <div id="lunch_deals">
-        <h2> 🍽️ Mittagsangebot </h2>
-        <ul id="lunch_deals_details">
-            <li>Vegetarische Gerichte: 8,90 €</li>
-            <li>Huhn + Kartoffeln in Currysauce: 10,90 €</li>
-            <li>Lamm + Kartoffeln in Currysauce: 11,90 €</li>
-        </ul>
+        <h2> ⭐ Mittagsangebot </h2>
+        <div class="vertical_centered_items">
+            <div>
+                <div> Vegetarische Gerichte: </div> 
+                <div> <strong>8,90 €</strong></li> </div>
+            </div>
+            <div>
+                <div> Huhn + Kartoffeln in Currysauce: </div>
+                <div> <strong>10,90 €</strong></div>
+            </div>
+            <div>
+                <div>Lamm + Kartoffeln in Currysauce:</div>
+                <div><strong>11,90 €</strong></div>
+            </div>
+        </div>
     </div>
 </div>
 </div>
@@ -129,12 +149,13 @@
 </div>
 </section>
 
+<!-- Impressionen -->
 <section id="impressions">
     <div class="header_of_section">
         <h1> Impressionen </h1>
     </div>
     <div id="impressions_speisen">
-    <h2> 🍽️ Speisen </h2>
+    <h2> 🍴 Speisen </h2>
     <ul>
         <li> 
             <div class="polaroid_container">
@@ -181,7 +202,7 @@
     </ul>
     </div>
     <div id="impressions_restaurant">
-    <h1> 🍽️ Restaurant </h1>
+    <h1> 🏠 Restaurant </h1>
     <ul>
         <li> 
             <div class="polaroid_container">
@@ -200,7 +221,7 @@
 <div class="footer_of_section"></div>
 </section>
     
-
+<!-- Über uns -->
 <section id="about_us">
 
 <div class="header_of_section">
