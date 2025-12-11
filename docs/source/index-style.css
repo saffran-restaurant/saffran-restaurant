@@ -5,6 +5,10 @@ section {
 /* WELCOME SECTION STYLES */
 /* ################################ */
 
+address {
+    font-style: normal;
+}
+
 #welcome_content_tiles {
     display: grid;
     gap: 3rem;
@@ -108,10 +112,10 @@ section {
 /* IMPRESSIONS SECTION STYLES */
 /* ################################ */
 
-@media (max-width: 749px) {
+@media (max-width: 849px) {
     #impressions > div > ul { --grid-columns: 2; }
 }
-@media (min-width: 750px) and (max-width: 1499px) {
+@media (min-width: 850px) and (max-width: 1499px) {
     #impressions > div > ul { --grid-columns: 3; }
 }
 @media (min-width: 1500px) {
@@ -125,7 +129,6 @@ section {
     height: auto;
     grid-template-columns: repeat(var(--grid-columns), var(--pola-size));
     grid-auto-rows: 1fr;
-    justify-self: center;
     gap: 1rem;
     list-style: none;
     padding-left: 0;

@@ -1,13 +1,8 @@
 # About
 
-This repository hosts the website that I created for fun to support my favorite restaurant 
+This repository hosts the website that I created to support my favorite restaurant 
 back in my hometown.
-
-# Disclamer
-
-Note that my HTML knowledge is very very basic the website is extremly simple.
-If you have any feedback or ideas how to improve the website let me know (Pull requests are
-welcome).
+I created it from scratch with HTML, CSS and JS.
 
 # Lizenz
 
@@ -21,5 +16,5 @@ Code, Struktur & Inhalte (ohne Bilder) ist unter der **Creative Commons Attribut
 * **Für jede kommerzielle Verwendung** (generiert Umsatz oder dient einem geschäftlichen Vorteil) ist eine **vorherige, schriftliche Genehmigung** und eine separate Lizenzvereinbarung mit dem Urheber erforderlich.
 * Lizenzanfragen sind zu richten an **Simon H. Hille**.
 
-Alle bilder außer food.png und logo_saff.png sind © 2025 Atm Manir Hossain — All Rights Reserved.
+Alle bilder außer logo_saff.png und favicon.ico sind © 2025 Atm Manir Hossain — All Rights Reserved.
 Wiederverwendung ist **verboten** ohne Genehmigung.

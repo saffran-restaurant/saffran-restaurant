@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="HandheldFriendly" content="True">
-    <title>Safran - Indisches Restaurant</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="global-style.css">
-    <link rel="stylesheet" href="navbar-style.css">
-    <link rel="stylesheet" href="index-style.css">
-    <link rel="stylesheet" href="foot-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Simon H. Hille">
+
+    <meta name="description" content="Saffran - Indisches Restaurant in Köln-Dellbrück. Vegetarische Gerichte, indische Pizzen, Lieferservice. Hatzfeld Straße 11, Tel: 0221-80037770">
+    <meta name="keywords" content="Indisch, Indisches Restaurant, Indisches Essen, Indisch Köln, vegetarisch, vegan, Curry, Pizza, Naan Pizza">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://saffran-koeln.de/">
+
+    <meta property="og:title" content="Saffran - Indisches Restaurant">
+    <meta property="og:description" content="Indisches Restaurant in Köln Dellbrück mit vegetarischen Gerichten und Lieferservice.">
+    <meta property="og:image" content="https://saffran-koeln.de/figs/saffran_teller.jpeg">
+    <meta property="og:url" content="https://saffran-koeln.de/">
+    <meta property="og:type" content="restaurant">
+
+    <meta name="geo.region" content="DE-NW">
+    <meta name="geo.placename" content="Köln-Dellbrück">
+    <meta name="geo.position"  content="50.97276166101711,7.0722016515197375">
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Restaurant",
-        "name": "Saffran Indisches Restaurant",
+        "name": "Saffran - Indisches Restaurant Köln-Dellbrück",
+        "description": "Indisches Restaurant in Köln-Dellbrück mit vegetarischen Gerichten und indischen Pizzen.",
+        "url": "https://saffran-koeln.de/",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Hatzfeld Straße 11",
@@ -23,14 +35,30 @@
             "postalCode": "51069",
             "addressCountry": "DE"
         },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.97276166101711,
+            "longitude": 7.0722016515197375
+        },
         "telephone": "0221 - 80037770",
         "email": "atmmanirhossain@gmail.com",
-        "servesCuisine": "Indian",
-        "hasMenu": true,
+        "paymentAccepted": ["Cash", "Credit Card"],
+        "servesCuisine": ["Indian", "Vegetarian", "Vegan"],
+        "hasMenu": "https://saffran-koeln.de/files/menu.pdf",
         "acceptsReservations": true
     }
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffran - Indisches Restaurant</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./figs/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./figs/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./figs/icons/apple-touch-icon.png">
+
+
+    <link rel="stylesheet" href="global-style.css">
+    <link rel="stylesheet" href="navbar-style.css">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="foot-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <div class="page-wrapper">
@@ -69,8 +97,12 @@
 <section id="welcome_section">
 
 <div class="header_of_section">
-    <h1> Saffran - Indisches Restaurant </h1>
-    Hatzfeld Straße 11, 51069 Dellbrück, Köln
+    <h1 itemprop="name"> Saffran - Indisches Restaurant </h1>
+    <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">Hatzfeld Straße 11</span>, 
+        <span itemprop="postalCode">51069</span> 
+        <span itemprop="addressLocality">Dellbrück, Köln</span>
+    </address>
 </div>
 
 <div class="content_of_section" id="welcome_content">
@@ -99,7 +131,7 @@
         <div class="vertical_centered_items">
             <div>
                 <div> Telefon: </div> 
-                <div> <strong>0221 - 80037770</strong></li> </div>
+                <div><strong>0221 - 80037770</strong></div>
             </div>
             <div>
                 <div> Mobil: </div>
@@ -262,6 +294,6 @@
 <script src="./scripts/mobile_navbar.js"></script>
 <script src="./scripts/smooth_scroll.js"></script>
 
-</body>
 </div>
+</body>
 </html>
