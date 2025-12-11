@@ -25,10 +25,10 @@ body{
     flex-direction: row;
     justify-content: center;
     background-color: var(--bg-color);
+    padding: 2rem 2rem;
 }
 
 .page-wrapper {
-    margin: 2rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
