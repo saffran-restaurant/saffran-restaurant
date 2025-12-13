@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block legal pages from indexing
+Disallow: /impressum.html
+Disallow: /datenschutz.html
+
+# Sitemap location
+Sitemap: https://saffran-koeln.de/sitemap.xml
