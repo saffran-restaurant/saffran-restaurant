@@ -5,8 +5,28 @@ section {
 /* WELCOME SECTION STYLES */
 /* ################################ */
 
-address {
+#address_in_header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#address_in_header > address{
     font-style: normal;
+}
+
+#maps_link {
+    transition: all 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #maps_link:hover {
+        transform: translateY(-2px);
+    }
+}
+
+#maps_link.clicked {
+    transform: translateY(-2px);
 }
 
 #welcome_content_tiles {
@@ -78,6 +98,25 @@ address {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+#pizza_link {    
+    color: var(--nav-color);
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #pizza_link:hover {
+        transform: translateY(-2px);
+        border-bottom: 2px solid var(--nav-color);
+    }
+}
+
+#pizza_link.clicked {
+    transform: translateY(-2px);
+    border-bottom: 2px solid var(--nav-color);
+}
 .vertical_centered_items{
     display: flex;
     flex-direction: column;
