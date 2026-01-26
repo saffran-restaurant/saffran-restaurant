@@ -29,6 +29,11 @@ section {
     transform: translateY(-2px);
 }
 
+#maps_link img {
+    width: 2.5rem;
+    height: auto;
+}
+
 #welcome_content_tiles {
     display: grid;
     gap: 3rem;
@@ -102,6 +107,7 @@ section {
     color: var(--nav-color);
     text-decoration: none;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 @media (hover: hover) and (pointer: fine) {
