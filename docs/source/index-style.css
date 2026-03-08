@@ -145,11 +145,13 @@ section {
     grid-template-columns: calc(1.5rem*8) auto;
 }
 
+/*
 #lunch_deals_details li{
     display: grid;
     padding: 0.2rem 0em;
     grid-template-columns: auto auto;
 }
+*/
 
 
 /* IMPRESSIONS SECTION STYLES */
