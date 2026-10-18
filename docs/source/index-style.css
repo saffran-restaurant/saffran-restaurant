@@ -74,6 +74,21 @@ section {
     padding-left: 0;
 }
 
+#qr_container {
+    display: flex;
+    justify-content: center;
+}
+
+#qr_container > img{
+    display: block;
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 4px 8px #0003, 0 6px 20px #0003;
+}
+
 #menu_link {
     display: inline-block;
     padding: 1rem 2rem;
@@ -145,13 +160,12 @@ section {
     grid-template-columns: calc(1.5rem*8) auto;
 }
 
-/*
 #lunch_deals_details li{
     display: grid;
     padding: 0.2rem 0em;
     grid-template-columns: auto auto;
 }
-*/
+
 
 
 /* IMPRESSIONS SECTION STYLES */
